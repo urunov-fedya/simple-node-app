@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 8081;
 
 app.get('/', async (req, res) => {
   try {
-    res.send([1, 2, 3]);
+    res.send('Hello, World');
   } catch (error) {
     res.status(400).send('Error while getting list of repositories');
   }
